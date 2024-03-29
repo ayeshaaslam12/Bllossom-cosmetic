@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="Css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="Css/style.css">
+  <script src="Js/bootstrap.bundle.js"></script>
+  <script src="slider.js"></script>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <div id="loader">
+        <h1>WELCOME TO</h1>
+        <h1>BLLOSSOM</h1>
+        <h1>COSMETIC</h1>
+    </div>
+  <!-- //header............. -->
+  <div class="container-fluid">
+    <div class="row">
+      <marquee behavior="alternate" direction="left">All proceeds go 100% to Thread of Hope, Inc.</marquee>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-md ">
+    <div class="container-fluid">
+      <a href="#" class="navbar-brand">
+        <img src="image/—Pngtree—salon logo_6872052.png" alt="" class="blossom">BLOSSOM
+      </a>
+      <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="navbarNav" class="collapse navbar-collapse">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item ">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="Aboutus.html" class="nav-link">About Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="store.html" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Products</a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="store.html" class="dropdown-item">Store</a>
+              </li>
+              <li>
+                <a href="skincare-product.html" class="dropdown-item">Skin Care</a>
+              </li>
+              <li>
+                <a href="cosmetic.html" class="dropdown-item">Makeup Products</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact Us</a>
+          </li>
+
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="#" class="nav-link" style="color: #e09145;" onclick="myFunction()"><i
+                class="fa-solid fa-moon"></i></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" style="color: #e09145;"><i class="fa-solid fa-search"></i></a>
+          </li>
+
+          <li class="nav-item">
+            <a href="loginform.html" class="nav-link" style="color: #e09145;"><i class="fa-solid fa-user"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- //navbar.......... -->
+  <!-- carousel -->
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1">
+        <img src="image/skincare.jpeg" alt="" class="d-block w-100 img-fluid">
+      </button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2">
+        <img src="image/b94b3f81-58a2-4620-88b5-c86bd096b516.jpeg" alt="" class="d-block w-100 img-fluid">
+      </button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3">
+        <img src="image/fixed-image.jpeg" alt="" class="d-block img-fluid width=" 50%"">
+      </button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <!-- <img src="image/skincare.jpeg" class="d-block w-100" alt="..." > -->
+        <div class="carousel-caption">
+          <h1>BLLOSSOM SKIN CARE</h1>
+          <p>Looking for the best skincare products online in Pakistan? You have come to the right place as we
+            offer saloon-quality skincare products at discount rates</p>
+          <a href="skincare.html" class="btn ">OUR STORE</a>
+        </div>
+      </div>
+      <div class="carousel-item carousel-pic">
+        <!-- <img src="image/b94b3f81-58a2-4620-88b5-c86bd096b516.jpeg" class="d-block w-100" alt="..." > -->
+
+        <div class="carousel-caption">
+          <h1>BLLOSSOM BEAUTY</h1>
+          <p>Shop Beauty Creations and join our Beauty Lovers squad to earn points and get early access!</p>
+          <a href="cosmetic.html" class="btn "> OUR STORE</a>
+        </div>
+      </div>
+      <div class="carousel-item carousel-pic2">
+        <!-- <img src="image/fixed-image.jpeg" class="d-block w-100" alt="..."> -->
+        <div class="carousel-caption">
+
+          <h1>BLLOSSOM BEAUTY</h1>
+          <p>Shop Beauty Creations and join our Beauty Lovers squad to earn points and get early access!</p>
+          <a href="cosmetic.html" class="btn "> OUR STORE</a>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- carousel end -->
+  <!-- banner -->
+  <div class="banners">
+    <div class="banner">
+      <h1 class="text-center">Powerful. . . Independent. . . Embrace your elegance and become the most exquisite
+        you.</h1>
+    </div>
+  </div>
+  <!-- produts -->
+  <div class="container-fluid products ">
+    <div class="beauti">
+      <div class="beauty-banner">
+        <div class="beauty-content">
+          <h2>MAKEUP</h2>
+          <h3>PRODUCT</h3>
+          <a href="cosmetic.html"> <button class="beauty-btn mt-4">SHOP NOW</button></a>
+        </div>
+      </div>
+    </div>
+    <div class="skin-product">
+      <div class="skin-banner">
+        <div class="skin-content">
+          <h2 class="text-white text-center">SKINCARE</h2>
+          <h3 class="text-white text-center ">PRODUCT</h3>
+          <a href="skincare.html"> <button class="skin-btn mt-4">SHOP NOW</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- product end -->
+  <!-- <div class="container-fluid images">   
+        <div class="row box m-5 px-5">
+            <div class="col-md-4 col-sx-4  text-center mt-3">
+              
+                <div class="card" >
+                    <div class="card-body">
+                        <img src="image/download.jpeg" alt="" class="card-img-top">
+                        <h1 class="card-title">BEAUTY COSMETIC</h1>
+                        <p class="card-text">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, dolorem.
+                        </p>
+                        <a href="cosmetic.html"><button class="btn btn-dark">Cart</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-4 col-md-4  text-center mt-3">
+                <div class="card card-bottom">
+                    <div class="card-body ">
+                        <img src="image/skincare.jpeg" alt="" class="card-img-top">
+                        <h1 class="card-title">SKIN CARE</h1>
+                        <p class="card-text">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, dolorem.
+                        </p>
+                      <a href="skincare.html">  <button class="btn btn-dark">Cart</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-4 col-md-4  text-center mt-3">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="image/login.jpeg" alt="" class="card-img-top">
+                        <h1 class="card-title">BEAUTY COSMETIC</h1>
+                        <p class="card-text">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, dolorem.
+                        </p>
+                       <a href="cosmetic.html"> <button class="btn btn-dark">Cart</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+  <div class="container-fluid images">
+    <div class="row box m-5 px-5">
+      <div class="col-md-6 col-lg-4 pt-4 d-flex justify-content-center text-center mt-3">
+        <div class="card card-right">
+          <div class="card-body">
+            <img src="image/download.jpeg" alt="" class="card-img-top">
+            <h1 class="card-title">BEAUTY COSMETIC</h1>
+            <p class="card-text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, dolorem.
+            </p>
+            <a href="cosmetic.html"><button class="btn btn-dark">Cart</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 pt-4 d-flex justify-content-center text-center mt-3">
+        <div class="card card-bottom">
+          <div class="card-body">
+            <img src="image/skincare.jpeg" alt="" class="card-img-top">
+            <h1 class="card-title">SKIN CARE</h1>
+            <p class="card-text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, dolorem.
+            </p>
+            <a href="skincare.html"><button class="btn btn-dark">Cart</button></a>
+          </div>
+        </div>
+      </div>
+      <div class=" col-md-6 col-lg-4 pt-4 d-flex justify-content-center text-center mt-3">
+        <div class="card">
+          <div class="card-body">
+            <img src="image/login.jpeg" alt="" class="card-img-top">
+            <h1 class="card-title">BEAUTY COSMETIC</h1>
+            <p class="card-text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, dolorem.
+            </p>
+            <a href="cosmetic.html"><button class="btn btn-dark">Cart</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- products end -->
+  <!-- image slider -->
+
+
+  <h1 class="bg-dark text-center text-white mb-4">#BLLOSSOM</h1>
+
+  <div class="container">
+    <div class="slider-wrapper">
+      <button id="prev-slide" class="slide-button material-symbols-rounded">
+        chevron_left
+      </button>
+      <ul class="image-list">
+        <img class="image-item" src="image/The Prettiest Blush on Pinterest Is Made With Rose Petals.jpeg"
+          alt="img-1" />
+        <img class="image-item" src="image/photography.jpeg" alt="img-2" />
+        <img class="image-item"
+          src="image/MERE SKINCARE_ THE FUTURE OF NATURAL BEAUTY _ A Conscious Collection in 2020 _ Natural beauty skinca.jpeg"
+          alt="img-3" />
+        <img class="image-item" src="image/I will create digital art, poster design, social media design.jpeg"
+          alt="img-4" />
+        <img class="image-item" src="image/EVERYTHING YOU NEED TO KNOW ABOUT CLEAN BEAUTY _ CLEAN GIRL AESTHETIC.jpeg"
+          alt="img-5" />
+        <img class="image-item" src="image/DIY Aloe Vera Face Mask for Glowing Skin.jpeg" alt="img-6" />
+        <img class="image-item" src="image/🐆.jpeg" alt="img-7" />
+        <img class="image-item" src="image/10 Holy-Grail Skincare Products to Enhance Your Routine 2024.jpeg" alt="img-8" />
+        <img class="image-item" src="image/Origins, skin care obsession on repeat _ Golden Strokes.jpeg" alt="img-9" />
+        <img class="image-item" src="image/7 Blush Products That Will Make You Love Your Cheeks Again _ Essence (1).jpg" alt="img-10" />
+      </ul>
+      <button id="next-slide" class="slide-button material-symbols-rounded">
+        chevron_right
+      </button>
+    </div>
+    <div class="slider-scrollbar">
+      <div class="scrollbar-track">
+        <div class="scrollbar-thumb"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- image-slider END -->
+
+  <!-- Testimonial -->
+  <h1 class="bg-dark text-center text-white mb-4">#CLIENT WE SAY</h1>
+  <div class="outerdiv">
+    <div class="innerdiv">
+      <!-- div1 -->
+      <div class="div1 eachdiv">
+        <div class="userdetails">
+          <div class="imgbox">
+            <img
+              src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-daniel.jpg"
+              alt="">
+          </div>
+          <div class="detbox">
+            <p class="name">Daniel Clifford</p>
+            <p class="designation">@danielclifford</p>
+          </div>
+        </div>
+        <div class="review">
+          <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore eaque veniam tempore nisi pariatur.
+            Necessitatibus aperiam natus, amet debitis explicabo ea distinctio odit perferendis </h4>
+          <p>“Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel dolorem odit impedit laudantium eveniet
+            obcaecati assumenda tempora odio placeat reprehenderit corporis explicabo maiores deleniti quaerat quasi
+            ipsum, eius, et est. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, ipsam. ”</p>
+        </div>
+      </div>
+      <!-- div2 -->
+      <div class="div2 eachdiv">
+        <div class="userdetails">
+          <div class="imgbox">
+            <img
+              src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-jonathan.jpg"
+              alt="">
+          </div>
+          <div class="detbox">
+            <p class="name">Jonathan Walters</p>
+            <p class="designation">@jonathanwalters</p>
+          </div>
+        </div>
+        <div class="review">
+          <h4>The Lorem ipsum dolor sit amet !</h4>
+          <p>“ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet, natus tempore iusto architecto omnis
+            commodi magni vel corporis ea quam! Autem, tempore veritatis saepe consequatur facilis mollitia ut rerum
+            nihil. ”</p>
+        </div>
+      </div>
+      <!-- div3 -->
+      <div class="div3 eachdiv">
+        <div class="userdetails">
+          <div class="imgbox">
+            <img
+              src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-kira.jpg"
+              alt="">
+          </div>
+          <div class="detbox">
+            <p class="name dark">Kira Whittle</p>
+            <p class="designation dark">@kirawhittle</p>
+          </div>
+        </div>
+        <div class="review dark">
+          <h4>Such a life-changing experience. Highly recommended!</h4>
+          <p>“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint natus quas praesentium quam quaerat nostrum
+            error, reiciendis neque cum. Placeat nesciunt ex ipsam, sint nemo beatae ratione dolore iure, delectus
+            quidem iste quod itaque explicabo est ipsum eius nostrum. Incidunt aut animi, corrupti, recusandae possimus
+            assumenda voluptatum tenetur exercitationem eveniet dolorem nihil! Error ipsa ratione quo ipsum nobis
+            magnam, ab veritatis quas vel est in distinctio aut ducimus, ipsam vero veniam asperiores omnis fugit iusto
+            autem? Id similique enim assumenda eaque voluptate illum autem perferendis? Consectetur voluptates quidem
+            quod at repudiandae aperiam. Voluptatum quaerat accusantium, numquam totam harum veniam. ! ”</p>
+        </div>
+      </div>
+      <!-- div4 -->
+      <div class="div4 eachdiv">
+        <div class="userdetails">
+          <div class="imgbox">
+            <img
+              src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-jeanette.jpg"
+              alt="">
+          </div>
+          <div class="detbox">
+            <p class="name dark">Jeanette Harmon</p>
+            <p class="designation dark">@jaentteharmon</p>
+          </div>
+        </div>
+        <div class="review dark">
+          <h4>An overall wonderful and rewarding experience</h4>
+          <p>“ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic quidem nulla atque. Iusto, tenetur fugiat
+            animi magni ducimus, ipsa deserunt qui quo ea impedit nobis eos commodi et, officia ratione. ”</p>
+        </div>
+      </div>
+      <!-- div5 -->
+      <div class="div5 eachdiv">
+        <div class="userdetails">
+          <div class="imgbox">
+            <img
+              src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-patrick.jpg"
+              alt="">
+          </div>
+          <div class="detbox">
+            <p class="name">Patrick Abrams</p>
+            <p class="designation">@patrickabrams</p>
+          </div>
+        </div>
+        <div class="review">
+          <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos architecto earum quis necessitatibus
+            explicabo excepturi aliquid autem quae porro voluptate! ?</h4>
+          <p>“ Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, ullam necessitatibus! Vel aut autem,
+            amet eius, velit consectetur ab voluptates nam quisquam maxime eligendi quis atque necessitatibus architecto
+            ipsum in iste fugit cupiditate adipisci quo officiis delectus omnis, explicabo alias. ”</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-row">
+      <div class="footer-col mt-5 py-4">
+        <h4 class="text-uppercase">Be the first to know about special sales and new arrivals</h4>
+        <h5>AND RECEIVE AN EXCLUSIVE COUPON</h5>
+        <input type="email" placeholder="Email" id="Email"> <button class="Subscribe"> SUBSCRIBE</button>
+      </div>
+      <div class="footer-container mt-5">
+        <div class="footer-col-link">
+          <h4 class="px-4 mb-4 ">Links</h4>
+          <ul class="explore-link">
+            <li> <a href="index.html">Home</a></li>
+            <li> <a href="Aboutus.html">About US</a></li>
+            <li> <a href="store.html">Catogeries</a></li>
+            <li> <a href="skincare-product.html">Skin Cares</a></li>
+            <li> <a href="cosmetic.html">Beauty Cosmetics</a></li>
+          </ul>
+        </div>
+        <div class="footer-col-link">
+          <h4 class="px-4 mb-4">Contact Info</h4>
+          <ul class="explore-link">
+            <li> <a href="contact.html">Contact Us</a></li>
+            <li><a href="ayeshaaslam3698@gmail.com">@ayeshaaslam3698@gmail.com</a></li>
+            <li>Address: ApetchNorthNazimabad</li>
+            <li><iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.1711062432473!2d67.02755867308895!3d24.9262402937704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f90157042d3%3A0x93d609e8bec9a880!2sAptech%20Computer%20Education%20North%20Nazimabad%20Center!5e0!3m2!1sen!2s!4v1709588286258!5m2!1sen!2s"
+                width="250px" height="100" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe></li>
+
+          </ul>
+        </div>
+
+      </div>
+      <div class="bottom">
+        <div class="footer-row-bottom">
+          <div class="footer-col-bottom mt-5 py-4">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <li> <a href="ayeshaskam3698@gmail.com">info@blossom.com</a></li>
+            <li><a href="+9122222222 ">+9122222222</a></li>
+          </div>
+
+
+        </div>
+      </div>
+
+  </footer>
+  <p class="copyright">&copy; 2024 Your Company . All right</p>
+  <script>
+    function loaderAnimation() {
+      var loader = document.querySelector("#loader")
+      setTimeout(function () {
+        loader.style.top = "-100%"
+      }, 4200)
+    }
+    loaderAnimation()
+  </script>
+  <!-- darkmode -->
+  <script>
+
+    function myFunction() {
+      var element = document.body;
+      element.classList.toggle("dark-mode");
+    }
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Css/bootstrap.css">
+    <link rel="stylesheet" href="Css/style.css">
+    <script src="Js/bootstrap.bundle.js"></script>
+    <style>
+        body{
+    background-image: url(../image/Brand\ Designer\ and\ Content\ Creator\ _\ Kara\ Layne.jpeg);
+    background-position: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    /* align-content: center; */
+    margin-top:40px ;
+}
+.registration{
+    height: 450px;
+    width: 60%;
+    background-color: rgba(150, 104, 18, 0.466);
+      text-align: center;
+    opacity: 0.9;
+}
+form {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+input{
+    height: 40px;
+    width: 50%;
+}
+#submit{
+    height: 40px;
+    width: 120px;
+    color:#FFF;
+    background-color: black;
+    border: none;
+}
+#submit:hover{
+    height: 40px;
+    width: 150px;
+    background-color:#FFF;
+    color: black;
+    border: none;
+}
+/* #usererror{
+    color: red;
+   
+} */
+@media (max-width: 600px) {
+  .registration {
+    width: 100%;
+    height: auto;
+  }
+
+  form input {
+    width: 100%;
+  }
+
+  #submit {
+    width: 100%;
+  }
+}
+       </style>
+</head>
+<body>
+   
+    <nav class="navbar navbar-expand-md ">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">
+                <img src="image/—Pngtree—salon logo_6872052.png" alt="" class="blossom">BLOSSOM
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarNav" class="collapse navbar-collapse">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item ">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Aboutus.html" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="store.html" class="nav-link dropdown-toggle" role="button"
+                            data-bs-toggle="dropdown">Products</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="store.html" class="dropdown-item">Store</a>
+                            </li>
+                            <li>
+                                <a href="skincare-product.html" class="dropdown-item">Skin Care</a>
+                            </li>
+                            <li>
+                                <a href="cosmetic.html" class="dropdown-item">Makeup Products</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact Us</a>
+                    </li>
+
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" style="color: #e09145;" onclick="myFunction()"><i
+                                class="fa-solid fa-moon"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" style="color: #e09145;"><i class="fa-solid fa-search"></i></a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a href="loginform.html" class="nav-link" style="color: #e09145;"><i class="fa-solid fa-user"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="registration">
+            <h1>Registration Form</h1>
+            <div class="form">
+                <input type="text" id="username" placeholder="Enter your name"><br>
+                <span id="usererror" class="text-danger font-weight-bold"></span><br>
+                <input type="email" id="email" placeholder="Enter your email address"><br>
+                <span id="emailerror" class="text-danger font-weight-bold"></span><br>
+                <input type="text" id="number" placeholder="Enter your phone number"><br>
+                <span id="numerror" class="text-danger font-weight-bold"></span><br>
+                <input type="password" id="password" placeholder="Enter your password"><br>
+                <span id="passerror" class="text-danger font-weight-bold"></span><br>
+                <input type="password" id="confirm_password" placeholder="Enter your confirm password"><br>
+                <span id="confirm_passerror" class="text-danger font-weight-bold"></span><br>
+                <button id="submit" onclick="validation()">Sign Up</button> <a href="loginform.html"> &nbsp;<button id="submit">Login</button></a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-row">
+            <div class="footer-col mt-5 py-4">
+                <h4 class="text-uppercase">Be the first to know about special sales and new arrivals</h4>
+                <h5>AND RECEIVE AN EXCLUSIVE COUPON</h5>
+                <input type="email" placeholder="Email" id="Email"> <button class="Subscribe"> SUBSCRIBE</button>
+            </div>
+            <div class="footer-container mt-5">
+                <div class="footer-col-link">
+                    <h4 class="px-4 mb-4 ">Links</h4>
+                    <ul class="explore-link">
+                        <li> <a href="index.html">Home</a></li>
+                        <li> <a href="Aboutus.html">About US</a></li>
+                        <li> <a href="store.html">Catogeries</a></li>
+                        <li> <a href="skincare-product.html">Skin Cares</a></li>
+                        <li> <a href="cosmetic.html">Beauty Cosmetics</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-link">
+                    <h4 class="px-4 mb-4">Contact Info</h4>
+                    <ul class="explore-link">
+                        <li> <a href="">Contact Us</a></li>
+                        <li><a href="ayeshaaslam3698@gmail.com">@ayeshaaslam3698@gmail.com</a></li>
+                        <li>Address: ApetchNorthNazimabad</li>
+                        <li><iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.1711062432473!2d67.02755867308895!3d24.9262402937704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f90157042d3%3A0x93d609e8bec9a880!2sAptech%20Computer%20Education%20North%20Nazimabad%20Center!5e0!3m2!1sen!2s!4v1709588286258!5m2!1sen!2s"
+                                width="250px" height="100" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe></li>
+    
+                    </ul>
+                </div>
+    
+            </div>
+            <div class="bottom">
+                <div class="footer-row-bottom">
+                    <div class="footer-col-bottom mt-5 py-4">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <li> <a href="info@citrocompany.com">info@blossom.com</a></li>
+                        <li><a href="+9122222222 ">+9122222222</a></li>
+                    </div>
+    
+    
+                </div>
+            </div>
+    
+    </footer>
+    <p class="copyright">&copy; 2024 Your Company . All right</p>
+      
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     <!-- darkmode -->
+     <script>
+    
+        function myFunction() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
+    
+      <script>
+    // Define emailregex globally
+    let emailregex = /^\w+@[a-z]+\.[a-z]{2,4}$/;
+
+    function validation() {
+        let userregex = /^[A-Za-z. ]{3,20}$/;
+        let phonecheck = /^[0-9]{11}$/;
+        let passregex = /.{8,}/;
+
+        var username = document.getElementById('username').value;
+        var email = document.getElementById('email').value;
+        var number = document.getElementById('number').value;
+        var password = document.getElementById('password').value;
+        var confirm_password = document.getElementById('confirm_password').value;
+
+        if (username === '') {
+            document.getElementById("usererror").innerHTML = "<span style='color:red'>**please enter your name</span> ";
+        } else if (!userregex.test(username)) {
+            document.getElementById("usererror").innerHTML = "<span style='color:red'>**username is invalid</span>";
+        } else {
+            document.getElementById("usererror").innerHTML = "<span style='color:green'>**user name is valid</span>";
+        }
+
+        if (email === '') {
+            document.getElementById("emailerror").innerHTML = "<span style='color:red'>**please enter your email address</span>";
+        } else if (!emailregex.test(email)) { // Use emailregex here
+            document.getElementById("emailerror").innerHTML = "<span style='color:red'>**your email address is invalid</span>";
+        } else {
+            document.getElementById("emailerror").innerHTML = "<span style='color:green'>**your email address is valid</span>";
+        }
+
+        if (number === '') {
+            document.getElementById("numerror").innerHTML = "<span style='color:red'>**please enter your phone number</span>";
+        } else if (!phonecheck.test(number)) {
+            document.getElementById("numerror").innerHTML = "<span style='color:red'>**invalid phone number</span>";
+        } else {
+            document.getElementById("numerror").innerHTML = "<span style='color:green'>**phone number is valid</span>";
+        }
+
+        if (password === '') {
+            document.getElementById("passerror").innerHTML = "<span style='color:red'>**please enter your password</span>";
+        } else if (!passregex.test(password)) {
+            document.getElementById("passerror").innerHTML = "<span style='color:red'>**password is invalid</span>";
+        } else {
+            document.getElementById("passerror").innerHTML = "<span style='color:green'>**password valid</span>";
+        }
+
+        if (confirm_password === '') {
+            document.getElementById("confirm_passerror").innerHTML = "<span style='color:red'>**please confirm your password</span>";
+        } else if (confirm_password !== password) {
+            document.getElementById("confirm_passerror").innerHTML = "<span style='color:red'>**passwords do not match</span>";
+        } else {
+            document.getElementById("confirm_passerror").innerHTML = "<span style='color:green'>**passwords match</span>";
+        }
+    }
+</script>
+
+</body>
+</html>

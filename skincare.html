@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmetic products</title>
+    <link rel="stylesheet" href="Css/bootstrap.css">
+    <link rel="stylesheet" href="Css/style.css">
+        <!----External CSS----->
+<link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="Js/bootstrap.bundle.js"></script>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md fixed-top">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">
+                <img src="image/—Pngtree—salon logo_6872052.png" alt="" class="blossom">BLOSSOM
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarNav" class="collapse navbar-collapse">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item ">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Aboutus.html" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="store.html" class="nav-link dropdown-toggle" role="button"
+                            data-bs-toggle="dropdown">Products</a>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a href="store.html" class="dropdown-item">Store</a>
+                        </li>
+                            <li>
+                                <a href="skincare.html" class="dropdown-item">Skin Care</a>
+                            </li>
+                            <li>
+                                <a href="cosmetic.html" class="dropdown-item">Makeup Products</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact Us</a>
+                    </li>
+
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" style="color: #e09145;" onclick="myFunction()"><i
+                                class="fa-solid fa-moon"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" style="color: #e09145;"><i class="fa-solid fa-search"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#shopping-cart" class="nav-link" style="color: #e09145;"><i
+                                class="fa-solid fa-shopping-cart"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="loginform.html" class="nav-link" style="color: #e09145;"><i class="fa-solid fa-user"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+   <!-- Item Categories-->
+<section id="category">
+    <div class="container-fluid">
+      <div class="row row-cols-2 row-cols-md-4 g-4">
+        <div class=" col">
+          <div class="card mt-4">
+            <img src="image/serum.jpg" class="card-img-top" alt="...">
+          </div>
+        </div>
+  
+        <div class=" col">
+          <div class="card mt-4">
+            <img src="image/facial.jpg" class="card-img-top" alt="...">
+          </div>
+        </div>
+  
+        <div class=" col">
+          <div class="card mt-4">
+            <img src="image/eyeproduc.jpg" class="card-img-top" alt="...">
+          </div>
+        </div>
+  
+        <div class=" col">
+          <div class="card mt-4">
+            <img src="image/mask.jpg" class="card-img-top" alt="..." >
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <a href="#category" class="up-icon"><i class="fa-solid fa-circle-chevron-up"></i></a>
+ 
+
+<!----------------------------------------------------------------------------------->
+<img src="image/steps-line.png" style="width: 100%; height: 100%; overflow: hidden;">
+ 
+ 
+<!----------------------------------------------------------------------------------->
+
+<!--Filter Button-->
+<div class = "filter-btns">
+    <a href="index.html"><button type="button" class="filter-btn" id="refresh"><i class="fa-solid fa-rotate" ></i> Refresh</button></a>
+     
+    <button type = "button" class = "filter-btn" id = "all">all</button>
+    <button type = "button" class = "filter-btn" id = "facial">Facial Kit</button>
+    <button type = "button" class = "filter-btn" id = "serum">Serum & Lotion</button>
+    <button type = "button" class = "filter-btn" id = "mask">Mask</button>
+    <button type = "button" class = "filter-btn" id = "eye">EyeProduct</button>
+  </div>
+
+  <section id="product-cards">
+    <div class="container-fluid">
+      <div class="row row-cols-2 row-cols-md-4 g-4">
+        <div class=" col filter-item " id="facial all">
+          <div class="card h-100">
+            <img src="image/facial1.jpg" class="card-img-top shop-item-image" alt="...">
+            <div class="card-body  d-flex flex-column">
+              <h5 class="card-title shop-item-title">Bllossom Facial massager</h5>
+              <p class="card-text shop-item-price"> Rs 2000.00</p>
+              <button type="button" style="width: 100%;" class="btn btn-outline-dark mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+            </div>
+          </div>
+        </div>
+  
+        <div class=" col filter-item " id="all facial">
+          <div class="card h-100">
+            <img src="image/facial2.jpg" class="card-img-top shop-item-image"  alt="...">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title shop-item-title">Bllossom Facial kit</h5>
+              <p class="card-text shop-item-price"> Rs 5790.00</p>
+              <button type="button" style="width: 100%;" class="btn btn-outline-dark mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+            </div>
+          </div>
+        </div>
+  
+        <div class=" col filter-item " id="all facial">
+          <div class="card h-100">
+            <img src="image/facial 3.jpg" class="card-img-top shop-item-image" alt="...">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title shop-item-title">Bllossom Facial Skin instant dry</h5>
+              <p class="card-text shop-item-price"> Rs 5790.00</p>
+              <button type="button" style="width: 100%;" class="btn btn-outline-dark mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+            </div>
+          </div>
+        </div>
+  
+        <div class=" col filter-item " id="all facial">
+          <div class="card h-100">
+            <img src="image/facial4.jpg" class="card-img-top shop-item-image" alt="...">
+            <div class="card-body  d-flex flex-column">
+              <h5 class="card-title shop-item-title">Bllossom facial skin care kit
+                </h5>
+              <p class="card-text shop-item-price"> Rs 5990.00</p>
+              <button type="button" style="width: 100%;" class="btn btn-outline-dark mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+            </div>
+          </div>
+        </div>
+  
+        <div class=" col filter-item " id="all serum">
+          <div class="card h-100">
+            <img src="image/DIY aftersun lotion.jpeg"class="card-img-top shop-item-image"  alt="...">
+            <div class="card-body  d-flex flex-column">
+              <h5 class="card-title shop-item-title">Bllossom Sun Lotion</h5>
+              <p class="card-text shop-item-price"> Rs 5990.00</p>
+              <button type="button" style="width: 100%;" class="btn btn-outline-dark mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+            </div>
+          </div>
+        </div>
+  
+        <div class=" col filter-item "  id="all serum">
+          <div class="card h-100">
+            <img src="image/I will create digital art, poster design, social media design.jpeg" class="card-img-top shop-item-image" alt="...">
+            <div class="card-body  d-flex flex-column">
+              <h5 class="card-title shop-item-title">Bollossom Body Lotion</h5>
+              <p class="card-text shop-item-price">Rs 3290.00</p>
+              <button type="button" style="width: 100%;" class="btn btn-outline-dark mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class=" col filter-item "  id="all  serum">
+          <div class="card h-100">
+            <img src="image/serum1.jpg" class="card-img-top shop-item-image"  alt="...">
+            <div class="card-body  d-flex flex-column">
+              <h5 class="card-title shop-item-title">Skin Care serum</h5>
+              <p class="card-text shop-item-price">Rs 3290.00</p>
+              <button type="button" style="width: 100%;" class="btn btn-outline-dark mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+            </div>
+          </div>
+        </div>
+  
+        <div class=" col filter-item "  id="all  serum">
+          <div class="card h-100">
+            <img src="image/serum.jpg"class="card-img-top shop-item-image"  alt="...">
+            <div class="card-body  d-flex flex-column">
+              <h5 class="card-title shop-item-title">Bllossom Face Serum</h5>
+              <p class="card-text shop-item-price">Rs 3690.00</p>
+              <button type="button" style="width: 100%;" class="btn btn-outline-dark mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+            </div>
+          </div>
+        </div>
+  
+        <div class=" col filter-item " id="all mask">
+          <div class="card h-100">
+            <img src="image/MERE SKINCARE_ THE FUTURE OF NATURAL BEAUTY _ A Conscious Collection in 2020 _ Natural beauty skinca.jpeg" class="card-img-top shop-item-image" alt="...">
+            <div class="card-body  d-flex flex-column">
+              <h5 class="card-title shop-item-title">Mere skin care mask</h5>
+              <p class="card-text shop-item-price">Rs 3450.00</p>
+              <button type="button" style="width: 100%;" class="btn btn-outline-dark mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+            </div>
+          </div>
+        </div>
+  
+        <div class=" col filter-item " id="all mask">
+          <div class="card h-100">
+            <img src="image/skincare.jpeg" class="card-img-top shop-item-image"  alt="...">
+            <div class="card-body  d-flex flex-column">
+              <h5 class="card-title shop-item-title">Bllossom Skin Care Mask</h5>
+              <p class="card-text shop-item-price">Rs 2500.00</p>
+              <button type="button" style="width: 100%;" class="btn btn-outline-dark mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+            </div>
+          </div>
+        </div>
+  
+        <div class=" col filter-item " id="all mask">
+          <div class="card h-100">
+            <img src="image/face mask.jpg" class="card-img-top shop-item-image" alt="...">
+            <div class="card-body  d-flex flex-column">
+              <h5 class="card-title shop-item-title">Bllossom Face clay Mask</h5>
+              <p class="card-text shop-item-price">Rs 2990.00</p>
+              <button type="button" style="width: 100%;" class="btn btn-outline-dark mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+            </div>
+          </div>
+        </div>
+  
+        <div class=" col filter-item " id="all mask">
+          <div class="card h-100">
+            <img src="image/EVERYTHING YOU NEED TO KNOW ABOUT CLEAN BEAUTY _ CLEAN GIRL AESTHETIC.jpeg"class="card-img-top shop-item-image"  alt="...">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title shop-item-title">Bllssom Eye Face Mask Toner</h5>
+              <p class="card-text shop-item-price">Rs 3990.00</p>
+              <button type="button" style="width: 100%;" class="btn btn-outline-dark mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+            </div>
+          </div>
+        </div>
+  
+        <div class=" col filter-item " id="all eye">
+          <div class="card h-100">
+            <img src="image/mask.jpg" class="card-img-top shop-item-image"class="card-img-top shop-item-image"  alt="...">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title shop-item-title">Bllossom Eye Mask</h5>
+              <p class="card-text shop-item-price">Rs 3690.00</p>
+              <button type="button" style="width: 100%;" class="btn btn-outline-dark mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+            </div>
+          </div>
+        </div>
+  
+        <div class=" col filter-item " id="all eye">
+          <div class="card h-100">
+            <img src="image/These 9 DIY Eye Masks Will Solve Your Under-Eye Problems.jpg" class="card-img-top shop-item-image" alt="...">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title shop-item-title">Bllossom Eye Mask</h5>
+              <p class="card-text shop-item-price">Rs 3690.00</p>
+              <button type="button" style="width: 100%;" class="btn btn-outline-dark mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping  " style="margin-right: 4%;"></i>Add To Cart</button>
+            </div>
+          </div>
+        </div>
+  
+        <div class=" col filter-item " id="all eye">
+          <div class="card h-100">
+            <img src="image/21 Best Under-Eye Masks & Patches for Dark Circles & Puffiness.jpg" alt="..." class="card-img-top shop-item-image" >
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title shop-item-title">Under eye mask $ oatches for dark circle</h5>
+              <p class="card-text shop-item-price">Rs 3690.00</p>
+              <button type="button" style="width: 100%;" class="btn btn-outline-dark mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+            </div>
+          </div>
+        </div>
+  
+        <div class=" col filter-item " id="all eye">
+          <div class="card h-100">
+            <img src="image/Rose Clay Face Mask DIY - Teach Soap.jpg" class="card-img-top shop-item-image" alt="...">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title shop-item-title">Rose clay Mask</h5>
+              <p class="card-text shop-item-price">Rs 3690.00</p>
+              <button type="button" style="width: 100%;" class="btn btn-outline-dark mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+
+  <section class="container content-section" id="shopping-cart">
+  
+    <p style=" font-size: 40px; font-weight: bolder; text-align: center; margin-bottom: 7%;">Shopping Cart</p>
+   
+   <table class="table table-hover table-cart">
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Price</th>
+        <th>Quantity</th>
+      </tr>
+    </thead>
+    <tbody class="cart-items">
+      
+       
+    </tbody>
+  </table>
+  
+      <div class="cart-total"> 
+        <strong class="cart-total-title">Total</strong>
+        <span  class="cart-total-price" style="text-align: right;">$0</span>
+      </div>
+   
+  
+      <div class="btn-purchase" style="margin-top: 10%;">
+        <button type="button"  class="btn btn-dark btn-purchase "><i class="fa-solid fa-cart-shopping " style="margin-right: 6%;"></i>PURCHASE</button>
+      </div>
+  
+  </section>
+
+ 
+
+    <footer>
+        <div class="footer-row">
+            <div class="footer-col mt-5 py-4">
+                <h4 class="text-uppercase">Be the first to know about special sales and new arrivals</h4>
+                <h5>AND RECEIVE AN EXCLUSIVE COUPON</h5>
+                <input type="email" placeholder="Email" id="Email"> <button class="Subscribe"> SUBSCRIBE</button>
+            </div>
+            <div class="footer-container mt-5">
+                <div class="footer-col-link">
+                    <h4 class="px-4 mb-4 ">Links</h4>
+                    <ul class="explore-link">
+                        <li> <a href="index.html">Home</a></li>
+                        <li> <a href="Aboutus.html">About US</a></li>
+                        <li> <a href="store.html">Catogeries</a></li>
+                        <li> <a href="skincare-product.html">Skin Cares</a></li>
+                        <li> <a href="cosmetic.html">Beauty Cosmetics</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-link">
+                    <h4 class="px-4 mb-4">Contact Info</h4>
+                    <ul class="explore-link">
+                        <li> <a href="contact.html">Contact Us</a></li>
+                        <li><a href="ayeshaaslam3698@gmail.com">@ayeshaaslam3698@gmail.com</a></li>
+                        <li>Address: ApetchNorthNazimabad</li>
+                        <li><iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.1711062432473!2d67.02755867308895!3d24.9262402937704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f90157042d3%3A0x93d609e8bec9a880!2sAptech%20Computer%20Education%20North%20Nazimabad%20Center!5e0!3m2!1sen!2s!4v1709588286258!5m2!1sen!2s"
+                                width="250px" height="100" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe></li>
+
+                    </ul>
+                </div>
+
+            </div>
+            <div class="bottom">
+                <div class="footer-row-bottom">
+                    <div class="footer-col-bottom mt-5 py-4">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <li> <a href="ayeshaaslam3698@gmail.com">info@blossom.com</a></li>
+                        <li><a href="+9122222222 ">+9122222222</a></li>
+                    </div>
+
+
+                </div>
+            </div>
+
+    </footer>
+     <!-- darkmode -->
+ <script>
+
+    function myFunction() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+    }
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const productCards = document.querySelectorAll('.filter-item');
+
+    filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const category = this.id;
+            filterProducts(category);
+        });
+    });
+
+    function filterProducts(category) {
+        productCards.forEach(card => {
+            if (card.id.includes(category) || category === 'all') {
+                card.style.display = 'block';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    }
+});
+</script>
+<script>
+    
+/* Shopping Cart Section */
+if (document.readyState == 'loading'){
+    document.addEventListener('DOMContentLoaded' , ready);
+}
+
+else{
+    ready();
+}
+
+
+ function ready(){
+    var removeCartItemButton = document.getElementsByClassName('btn-danger');
+    for (var i = 0 ; i < removeCartItemButton.length; i++){
+        var button = removeCartItemButton[i];
+        button.addEventListener('click', removeCartItem)
+    }
+
+    var quantityInputs = document.getElementsByClassName('cart-quantity-input');
+    for(var i = 0 ;i < quantityInputs.length ; i++){
+        var input = quantityInputs[i];
+        input.addEventListener('change', quantityChanged);
+    }
+    
+    var addToCartButtons = document.getElementsByClassName('shop-item-button');
+    for(var i = 0; i< addToCartButtons.length; i++){
+        var button = addToCartButtons[i];
+        button.addEventListener('click',addToCartClicked)
+    }
+
+    document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
+ }
+
+
+ function purchaseClicked(){
+     alert('Thank you for your purchase!!!');
+     var cartItems = document.getElementsByClassName('cart-items')[0];
+     while(cartItems.hasChildNodes()){
+         cartItems.removeChild(cartItems.firstChild)
+     }
+     updateCartTotal();
+ }
+
+function removeCartItem(event){
+    var buttonClicked = event.target;
+    buttonClicked.parentElement.parentElement.remove();
+    updateCartTotal();
+    
+}
+
+function  quantityChanged(event){
+    var input = event.target;
+    if(isNaN(input.value) || input.value <= 0 ){
+        input.value = 1;
+    }
+    updateCartTotal();
+}
+
+
+function addToCartClicked(event){
+    var button = event.target;
+    var shopItem = button.parentElement.parentElement;
+    var title = shopItem.getElementsByClassName('shop-item-title')[0].innerText;
+    var price = shopItem.getElementsByClassName('shop-item-price')[0].innerText;
+    var imageSrc = shopItem.getElementsByClassName('shop-item-image')[0].src;
+    addItemToCart(title,price,imageSrc);
+    updateCartTotal();
+}
+
+function addItemToCart(title, price, imageSrc){
+    var cartRow = document.createElement('tr');
+    cartRow.classList.add('cart-row');
+    var cartItems = document.getElementsByClassName('cart-items')[0];
+    var cartItemNames = cartItems.getElementsByClassName('cart-item-title');
+
+    for (i = 0; i< cartItemNames.length ; i++){
+        if(cartItemNames[i].innerText == title){
+            alert('This item already has added to the cart!');
+            return
+        }
+    }
+    var cartRowContents = `
+
+        <td class="cart-item cart-column">
+            <img class="cart-item-image" src="${imageSrc}" width="50" height="50">
+            <span class="cart-item-title">${title}</span>                  
+        </td>
+        <td class="cart-item cart-column">
+            <span class="cart-price cart-column">${price}</span>
+        </td>
+        <td class="cart-item cart-column">
+            <input class="cart-quantity-input" type="number" value="1" style="width: 50px">
+            <button class="btn btn-danger" type="button">Remove</button>
+        </td>        
+    `;
+     
+            
+    cartRow.innerHTML = cartRowContents;
+    cartItems.append(cartRow);
+    cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', removeCartItem);
+    cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('change', quantityChanged)
+}
+
+
+function updateCartTotal(){
+    var cartItemContainer = document.getElementsByClassName('cart-items')[0];
+    var cartRows = cartItemContainer.getElementsByClassName('cart-row');
+    var total = 0;
+    for (var i = 0 ; i< cartRows.length ; i++){
+        var cartRow =cartRows[i];
+        var priceElement = cartRow.getElementsByClassName('cart-price')[0];
+        var quantityElement = cartRow.getElementsByClassName('cart-quantity-input')[0];
+        var price = parseFloat(priceElement.innerText.replace('Rs ' , ''))
+        var quantity = quantityElement.value;
+        total = total + (price * quantity);
+         
+    }
+    total = Math.round(total * 100 )/100;
+    document.getElementsByClassName('cart-total-price')[0].innerText = 'Rs '+ total + '.00';
+ 
+}
+</script>
+
+</body>
+
+</html>
